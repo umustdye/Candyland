@@ -90,7 +90,8 @@ int Board::getLocation(string card, int prevLocation, string doubleOrSingle)
     int location = 0; 
     if(winner(card, prevLocation)&& !ifSpecialCard(card))
     {
-        location = 134;
+        //since there are 134 spots on the board
+        location = 133;
         return location;
     }
     if(ifSpecialCard(card))
@@ -115,7 +116,7 @@ int Board::getLocation(string card, int prevLocation, string doubleOrSingle)
 
 int Board::getCastleDistance(int location)
 {
-    return boardSize-location;
+    return (boardSize-1)-location;
 }
 
 bool Board::ifSpecialCard(string card)
@@ -137,17 +138,17 @@ bool Board::winner(string card, int prevLocation)
 {
     bool win = true;
     
-
-        for(int i=prevLocation; i<boardSize; i++)
-        { 
-            //cout<<board[i];
-            if(board[i] == card)
-            {
-                //cout<<"Bye";
-                win = false;
-                break;
-            }
+        
+    for(int i=prevLocation; i<boardSize; i++)
+    { 
+        //cout<<board[i];
+        if(board[i] == card)
+        {
+            //cout<<"Bye";
+            win = false;
+            break;
         }
+    }
 
 
     return win;

@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /* 
  * File:   Game.cpp
- * Author: Heidi2
+ * Author: Heidi
  * 
  * Created on October 17, 2019, 8:56 PM
  */
@@ -72,7 +67,7 @@ bool Game::winner()
 {
     int location = players[turn].getLocationNum();
     //cout<<"Location "<<location<<endl;
-    if(board.getCastleDistance(location)== 0)
+    if(board.getCastleDistance(location)== 0 || board.getCastleDistance(location)< 0)
     {
         return true;
     }

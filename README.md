@@ -10,7 +10,8 @@ Virtual Candyland written in C++ and QT.
   * Speciality : “Frostline”, “Mr. Mint”, “Gramma Nut”, “Jolly”, “Plumpy”, and “Princess Lolly.”
 * For each card type, there are 6 each of the single, 4 each of the double, and 1 each for the speciality
 
-## The C++ Version : ##
+## The Terminal Version : ##
+* Written in C++
 * No GUI, player turns and cards are displayed via text in the terminal.
 * The user first chooses the number of playes and the color for each player using a text-based menu.
 * During each players turn:
@@ -19,6 +20,8 @@ Virtual Candyland written in C++ and QT.
   * the program ouputs the card, and the player's updated distance from the castle
 * This continues until one of the players reach the castle.
 
-## The QT Version : ##
+## The GUI Version : ##
 *In the process of development...*
+* Written in C#
+* Utilizes Unity
   
